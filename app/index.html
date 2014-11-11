@@ -20,6 +20,8 @@
 </head>
 
 <body unresolved fullbleed layout vertical>
+<core-header-panel mode="seamed">
+<core-toolbar >APPLIKATIONSNAMN</core-toolbar>
 
 <core-drawer-panel responsiveWidth="1200px" drawerwidth="155px">
   <div drawer> 
@@ -49,11 +51,12 @@
       </div>
     </core-header-panel>
   </div>
-  <div main style="margin:0px 16px 16px 16px; padding-bottom:0px;" > 
+  <div main style="margin:6px 16px 16px 16px; padding-bottom:0px;" > 
   <paper-shadow z="2"></paper-shadow>
       <core-header-panel flex mode="waterfall">
       <core-toolbar><core-icon-button icon="menu" core-drawer-toggle></core-icon-button>App</core-toolbar>
-      <div  flex layout vertical>
+      <div  flex layout horizontal wrap center-justified>
+      <sample-card-container>Content</sample-card-container>
       <div style="height:150px;width:140px;margin:6px;" center >
         <core-header-panel  mode="waterfall" layout center>
           <div class="core-header" style="background:#03A9F4" horizontal layout center >center</div>
@@ -92,26 +95,7 @@
           </div>
         </core-header-panel>
         </div>
-      <div style="height:150px;width:140px;margin:6px;" center >
-        <core-header-panel  mode="waterfall" layout center>
-          <div class="core-header" style="background:#03A9F4" horizontal layout center >center</div>
-          <div style="text-align:center">
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-            Content<br>
-
-          </div>
-        </core-header-panel>
-        </div>
-        <div style="height:150px;width:140px;margin:6px;" center >
+          <div style="height:150px;width:140px;margin:6px;" center >
         <core-header-panel  mode="waterfall" layout center>
           <div class="core-header" style="background:#03A9F4" horizontal layout center >center</div>
           <div style="text-align:center">
@@ -138,6 +122,7 @@
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->
+</core-header-panel>
 </body>
 
 </html>
