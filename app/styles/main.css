@@ -7,21 +7,22 @@ body /deep/ div::-webkit-scrollbar {
     width: 6px;
     background: rgba(0,0,0,0.14);
 }
-
+[drawer]{background-color:white;border-radius:4px;}
 body /deep/ div::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.26 );
+    background: rgba(0, 0, 0, 0.14);
+    height:12px;
     -webkit-border-radius: 1ex;
     border: 1px solid rgba(0, 0, 0, 0.26) ;
 }
 
 body /deep/ div::-webkit-scrollbar-corner {
-    background: rgba(0,0,0,0.14);
+    background: red;
 }
  
 core-header-panel {
   height: 100%;
 }
-
+core-toolbar{background-color: #03A9F4;}
 core-header-panel::-webkit-scrollbar{display:none;}
 div::-webkit-scrollbar{display:none;}
 .hero-unit {
